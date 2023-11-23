@@ -10,7 +10,7 @@ export const siteTitle = 'Next.js Sample Website';
 import useSWR from 'swr';
 
 function Profile() {
-  const { data, error } = useSWR('https://nextjs-blog-api.home.sphinxzhai.me:1443/api/user', fetch);
+  const { data, error } = useSWR('https://nextjs-blog.sphinxzhai.me:1443/api/user', fetch);
 
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;
